@@ -15,7 +15,7 @@ bot.command("start", async (ctx) => {
   const greeting = name ? `, ${escapeHtml(name)}` : "";
 
   await ctx.reply(
-    `<tg-emoji emoji-id="5472055112702629499">👋</tg-emoji> Assalomu alaykum${greeting}!\n\n<tg-emoji emoji-id="5393569473041048967">✅</tg-emoji> Men kanalingizga kelgan qo'shilish so'rovlarini avtomatik tasdiqlayman.\n\n<tg-emoji emoji-id="5386766919154016047">🦾</tg-emoji> Botni kanalga administrator qilib qo'shing va so'rovlarni boshqarish huquqini bering.\n\n<tg-emoji emoji-id="5431577498364158238">📊</tg-emoji> Shundan so'ng so'rovlar avtomatik tasdiqlanadi.`,
+    `<blockquote><tg-emoji emoji-id="5472055112702629499">👋</tg-emoji> Assalomu alaykum${greeting}!\n\n<tg-emoji emoji-id="5393569473041048967">✅</tg-emoji> Men kanalingizga kelgan qo'shilish so'rovlarini avtomatik tasdiqlayman.\n\n<tg-emoji emoji-id="5386766919154016047">🦾</tg-emoji> Botni kanalga administrator qilib qo'shing va so'rovlarni boshqarish huquqini bering.\n\n<tg-emoji emoji-id="5431577498364158238">📊</tg-emoji> Shundan so'ng so'rovlar avtomatik tasdiqlanadi.</blockquote>`,
     { parse_mode: "HTML" },
   );
 });
