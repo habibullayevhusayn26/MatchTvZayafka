@@ -19,4 +19,6 @@ Bot `/start` buyrug'ini yuborgan foydalanuvchiga salomlashuv va sozlash bo'yicha
    npm start
    ```
 
-Bot ishlayotgan paytda yangi so'rovlar avtomatik tasdiqlanadi. Botni doimiy ishlatish uchun uni uzluksiz ishlaydigan serverda ishga tushiring.
+Bot odatiy terminalda polling rejimida ishlaydi. Render `RENDER_EXTERNAL_URL` ni berganda, bot avtomatik webhook rejimiga o'tadi va `PORT` da HTTP server ochadi. Render Web Service uchun **Build Command** `npm ci`, **Start Command** `npm start` bo'lsin; `/health` sog'liq tekshiruvi uchun ishlaydi.
+
+Render'ning bepul Web Service rejimi harakatsizlikda uxlab qolishi mumkin. Shu vaqtda kelgan webhook qayta uyg'otishni talab qilishi sababli so'rovlar kechikishi mumkin. Uzluksiz va kechikishsiz ishlash uchun doimiy ishlaydigan hosting kerak.
